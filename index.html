@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="#09f">
     <title>Portofolio Alex</title>
-    <meta rel="icon" type="image/jpeg" href="anime-moon-landscape.jpg">
+    <meta rel="icon" type="image/jpeg" href="yoConPiano.jpg">
     <meta name="robots">
     <meta name="Portofolio" content="Portofolio de Alex">
     <meta property="og:title" content="Portofolio Alex">
     <meta property="og:type" content="website">
     <meta property="og:url" content="index.html">
-    <meta property="og:image" content="anime-moon-landscape.jpg">
+    <meta property="og:image" content="yoConPiano.jpg">
     <style>
         body {
             background: rgba(208,208,208,0.9);
@@ -31,6 +31,10 @@
     <main>
         <h1>Portofolio de Alex</h1>
 <p><strong>Ingeniero de Software</strong> con 0 años de experiencia </p>
+
+<img title="foto de Alex" src="yoConPiano.jpg" alt ="Foto de Alex" width="200" height="447">
+
+
 <h2 id="experiencia">Experiencia</h2>
 <ul>
     <li class ="">ESII</li>
@@ -89,22 +93,56 @@
 </section>
 
 <!--Esto siguiente es la imagen que he introducido-->
-<img id = "foto-luna" title="foto de JAG" src="anime-moon-landscape.jpg" alt="Foto de Luna" hidden>
+<img id = "foto-luna" title="foto de JAG" src="anime-moon-landscape.jpg" alt="Foto de Luna" hidden >
+
 
 <section>
- <h2>Formulario de contacto</h2>
- <form method="post" action="/">
- <fieldset>
- <legend>Información personal</legend>
- <div><label for="name">Nombre:</label>
- <input type="text" id="name" placeholder="JAG">
- </div>
- <div><label for="em">Email:</label>
- <input type="email" id="em" placeholder="a@a.es">
- </div>
-<div><label for="tel" pattern="+[0-9]{}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required>Teléfono:</label>
-</fieldset>
- </form>
+    <h2>Formulario de contacto</h2>
+    <form method="post" action="/">
+        <fieldset>
+            <legend>Información personal</legend>
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="JAG" required>
+            </div>
+            <div>
+                <label for="em">Email:</label>
+                <input type="email" id="em" name="em" placeholder="a@a.es" required>
+            </div>
+            <div>
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <div>
+                <label for="why">¿Sobre qué quieres contactar?:</label>
+                <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Consulta</option>
+                    <option value="3">Otros</option>
+                </select>
+            </div>
+            <div>
+                <label for="terms">Acepta los términos</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+            <div>
+                <label>¿Qué lenguaje necesitas ayuda?</label>
+                <input list="lang" name="lang">
+                <datalist id="lang">
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="C++"></option>
+                </datalist>
+            </div>
+        </fieldset>
+        <div style="margin-top:1em;">
+            <input type="submit" value="Enviar contacto">
+            <button type="reset">Borrar formulario</button>
+        </div>
+    </form>
 </section>
 
 <fieldset>
@@ -131,20 +169,18 @@
  <input list="lang" name="lang">
 </div>
 </fieldset>
+
 <section>
- <h2>Preguntas frecuentes</h2>
- <details>
- <summary>¿Cómo contacto?</summary>
- <p>Enviando un correo a jag@jag.com</p>
- </details>
- <details>
- <summary>¿Cómo me llamo?</summary>
- <p>JAG</p>
- </details>
+    <h2>Preguntas frecuentes</h2>
+    <details>
+        <summary>¿Cómo contacto?</summary>
+        <p>Enviando un correo a jag@jag.com</p>
+    </details>
+    <details>
+        <summary>¿Cómo me llamo?</summary>
+        <p>JAG</p>
+    </details>
 </section>
-<input type="submit" value="Enviar contacto">
-<button type="submit">Enviar contacto</button>
-<button>Borrar formulario</button>
 
 
 
